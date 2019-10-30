@@ -8,8 +8,8 @@ let inp = $('#inputId').val();
 $('ul').append('<li><button id="red" class = "btn btn-xs btn-danger">X</button>' + inp + '</li>')
 });
 
-$(document).on('click', 'li', function(){
-    $(this).remove();
+$(document).on('click', '#red', function(){
+    $(this).parent().remove();
  })
 
 $('ul').css('list-style-type', 'none')
